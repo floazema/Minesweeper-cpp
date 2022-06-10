@@ -211,6 +211,10 @@ void place_box(Game::sweeper *ji, int *bomb)
 
 int main(int ac, char **av)
 {
+    if (ac != 2)
+        return -1;
+    if (atoi(av[1]) < 20 || atoi(av[1]) > 30)
+        return -1;
     Game::sweeper ji;
     ji.window.create(sf::VideoMode(800, 800), "démineur");
     int bomb[1024];
