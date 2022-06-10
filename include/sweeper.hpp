@@ -16,10 +16,12 @@ namespace Game {
             sweeper();
             ~sweeper() = default;
             sf::Sprite Bomb;
+            sf::Font nbr_f;
             sf::Texture texture_bomb;
             sf::Sprite flag;
             sf::Texture texture_flag;
             sf::Sprite box;
+            sf::Text nbr_t;
             sf::Texture texture_box;
             sf::RenderWindow window;
         protected:
