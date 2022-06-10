@@ -2,28 +2,29 @@
 ** EPITECH PROJECT, 2022
 ** cpp
 ** File description:
-** Epaint_Main
+** sweeper
 */
 
-#ifndef EPAINT_MAIN_HPP_
-#define EPAINT_MAIN_HPP_
+#ifndef sweeper_HPP_
+#define sweeper_HPP_
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
 namespace Game {
-    class Epaint_Main {
+    class sweeper {
         public:
-            Epaint_Main();
-            ~Epaint_Main() = default;
+            sweeper();
+            ~sweeper() = default;
             sf::Sprite Bomb;
             sf::Texture texture_bomb;
             sf::Sprite flag;
             sf::Texture texture_flag;
             sf::Sprite box;
             sf::Texture texture_box;
+            sf::RenderWindow window;
         protected:
         private:
     };
 }
 
-#endif /* !EPAINT_MAIN_HPP_ */
+#endif /* !sweeper_HPP_ */
